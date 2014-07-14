@@ -27,7 +27,10 @@
 								<key>IncludeNetworkUser</key>
 								<false/>
 								<key>LoginwindowText</key>
-                <string><%= @loginwindowtext %></string>
+                <string>
+                <% if loginwindowtext != "NONE" %>
+                  loginwindowtext <%= loginwindowtext %>
+                <% end %></string>
 								<key>RestartDisabled</key>
 								<false/>
 								<key>SHOWFULLNAME</key>
