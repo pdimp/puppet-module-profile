@@ -1,5 +1,5 @@
 # Turns IPv6 WiFi settings off.
-class profile::network_settings::ipv6off (
+class profile::mac_settings::ipv6off (
 ) {
   exec {"ipv6off_wifi":
     command => "/usr/sbin/networksetup -setv6off Wi-Fi",

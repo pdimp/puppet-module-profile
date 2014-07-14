@@ -1,6 +1,6 @@
 # Configures the proxy settings to point to a pac file.
 #
-class profile::network_settings::wifi_proxy (
+class profile::mac_settings::wifi_proxy (
   $autoproxyurl = 'http://localhost/proxy.pac'
 ) {
   exec {'autoproxyurl':

@@ -1,6 +1,6 @@
 # Turns IPv6 WiFi settings on/off.
 # Off by default.
-class profile::network_settings::softwareupdate_schedule (
+class profile::mac_settings::softwareupdate_schedule (
   $schedule = 'off'
 ) {
   exec {"softwareupdateoff":

@@ -3,7 +3,7 @@
 # This step is necessary in order to enforce Safe Search,
 # which must not be encrypted.
 
-class profile::network_settings::google_nosslsearch (
+class profile::mac_settings::google_nosslsearch (
   $ensure = 'present'
 ) {
   host { 'www.google.com':
