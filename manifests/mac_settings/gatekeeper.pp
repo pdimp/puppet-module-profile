@@ -1,10 +1,11 @@
-# Uses the mosen/gatekeeper provider to enable/disable Gatekeeper
+# Enable/disable Gatekeeper
 # on OS X Workstations
 #
 class profile::mac_settings::gatekeeper (
-  $enable = false,
+  $status = 'disable',
 ) {
-  gatekeeer {"master":
-    enabled => $enable,
+  exec {'gatekeeper-master':
+    command => "/usr/sbin/spctl --master-$status",
+    unless  => "/usr/sbin/spctl --status | grep \"assessments ${status}d\"",
   }
 }
