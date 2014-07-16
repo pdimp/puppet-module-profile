@@ -4,6 +4,7 @@
 :hierarchy:
   - "%{clientcert}"
   - "%{environment}"
+  - "%{role}"
   - global
 
 :yaml:
