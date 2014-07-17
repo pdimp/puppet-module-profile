@@ -8,5 +8,6 @@ class profile::puppet::pluginsync (
     source  => "puppet:///plugins",
     recurse => true,
     purge   => true,
+    force   => true,
   }
 }
