@@ -8,7 +8,7 @@ class profile::mac_settings::google_nosslsearch (
 ) {
   host { 'www.google.com':
     ensure => $ensure,
-    ip     => $::nosslsearch_ip_address,
+    ip     => $nosslsearch_ip_address,
     target => '/etc/hosts',
     notify => Exec["flushdnscache"],
   }
