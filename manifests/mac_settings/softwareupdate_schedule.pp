@@ -5,7 +5,7 @@ class profile::mac_settings::softwareupdate_schedule (
 ) {
   exec {"softwareupdateoff":
     command => "/usr/sbin/softwareupdate --schedule $sched",
-    unless  => "/usr/sbin/softwareupdate --schedule | grep \"is $sched\""
+    unless  => "/usr/sbin/softwareupdate --schedule | grep \"Automatic check is $sched\""
   }
 }
 
