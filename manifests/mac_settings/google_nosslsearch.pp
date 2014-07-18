@@ -4,7 +4,8 @@
 # which must not be encrypted.
 
 class profile::mac_settings::google_nosslsearch (
-  $ensure = 'present'
+  $ensure = 'present',
+  $nosslsearch_ip_address = '216.239.32.20'
 ) {
   host { 'www.google.com':
     ensure => $ensure,
