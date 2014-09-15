@@ -3,6 +3,7 @@
   - yaml
 :hierarchy:
   - "%{clientcert}"
+  - "%{sp_serial_number}"
   - "%{role}"
   - "%{mac_laptop}"
   - "%{operatingsystem}"
