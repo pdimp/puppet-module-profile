@@ -5,7 +5,7 @@
   - "%{clientcert}"
   - "%{sp_serial_number}"
   - "%{role}"
-  - "%{mac_laptop}"
+  - "%{virtual}/%{operatingsystem}"
   - "%{operatingsystem}"
   - global
 
