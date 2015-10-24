@@ -2,7 +2,7 @@
 # Sets the url to blank by default.
 class profile::mac_settings::wifi_proxy (
   $state = "off",
-  $autoproxyurl = " "
+  $autoproxyurl = '" "'
 ) {
   exec {'autoproxyurl':
     command => "/usr/sbin/networksetup -setautoproxyurl wi-fi $autoproxyurl",
